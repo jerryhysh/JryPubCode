@@ -1,0 +1,68 @@
+>>GitHub访问慢
+（1）服务器地址的TTL值
+http://tool.chinaz.com/dns
+（2）本地电脑的C:\Windows\System32\drivers\etc目录，找到hosts文件，在末尾添加
+13.250.177.223 github.com
+
+
+>>配置信息
+配置用户名    git config --global user.name "你自己GitHub的用户名"
+
+配置邮箱    git config --global user.email "你自己GitHub的注册邮箱"
+
+
+>>创建Git仓库
+（1）在合适的地方创建一个空目录
+（2）GitHub Bash进入该目录
+（3）输入"git init"创建仓库
+
+>>数据提交到仓库
+(常用命令)把文件添加到仓库 git add file.txt
+(常用命令)把文件提交到仓库 git commit -m "注释信息"
+
+
+
+(常用命令)查看仓库状态 git status
+(较少用)查看仓库修改的内容 git diff
+(常用命令)查看提交的日志 git log
+	git log --pretty=onelinelog
+(常用命令)版本回退 git reset --hard HEAD^ (回退几次几个^)
+	git reset --hard HEAD-100 （回退到上几个版本）
+	git reset --hard 具体版本号
+
+历史命令记录 git reflog
+
+回退到最近一次提交的版本 git checkout --FileName
+
+
+(1)key生成   ssh-keygen -t rsa -C "邮箱地址"
+(2)从上述生成目录（C:\Users\Administrator\.ssh）中，获取公钥
+(3)将key挂在到github官网
+(4)测试是否成功 ssh -T git@github.com
+(5)关联远程仓库地址 git remote add origin "git@github.com:jerryhysh/JryPubCode.git" ("远程仓库地址")  
+(6)远程仓库内容拉到本地 git pull origin master --allow-unrelated-histories
+(7)将内容推到远程仓库 git push origin master
+
+从0开发
+进入目录
+远程库克隆到本地 git clone "远程库"
+将不想上推的包写入到.ignore文件中
+
+
+
+
+工作区，缓存区 | 版本区
+
+https://www.iqiyi.com/v_19rrcwjioo.html?videoIsFromQidan%3Ditemviewclkrec#curid=1022837300_d6a10c611a6a5201d226e2f276edbcbd
+
+
+
+
+
+
+
+
+
+
+
+

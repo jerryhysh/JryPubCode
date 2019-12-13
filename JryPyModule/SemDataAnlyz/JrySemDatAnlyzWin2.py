@@ -117,8 +117,8 @@ class MyPanel1 ( wx.Panel ):
 	
 	# Virtual event handlers, overide them in your derived class
 	def AnalyzeData( self, event ):
+		self.OriginStr = self.m_textCtrl1.GetValue()
 		if(True == self.m_checkBox1.GetValue()):
-			self.OriginStr = self.m_textCtrl1.GetValue()
 			self.OutputStr = TboxAndPlatProtolAnlyz(1,self.OriginStr)
 			self.m_textCtrl2.SetValue(self.OutputStr)
 		else:
